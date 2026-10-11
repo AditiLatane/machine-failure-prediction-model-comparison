@@ -32,7 +32,6 @@ I compared four machine learning models to identify which one performs best at p
 - **Matplotlib & Seaborn** — Data visualization
 - **Scikit-learn** — Machine learning
 - **Imbalanced-learn** — Handling imbalanced data
-- **Joblib** — Saving the trained model
 
 ## 🔍 Project Workflow
 
@@ -71,7 +70,6 @@ I compared four machine learning models to identify which one performs best at p
 
 ## 🚀 Future Improvements
 
-- Improve model performance through parameter tuning.
 - Build an interactive dashboard for machine failure predictions.
 - Explore how the model could support preventive maintenance.
 
