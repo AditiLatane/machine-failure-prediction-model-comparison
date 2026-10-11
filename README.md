@@ -1,59 +1,87 @@
-# Predictive Maintenance & Machine Failure Prediction
+# ⚙️ Machine Failure Prediction — Model Comparison
 
-An end-to-end Machine Learning pipeline designed to predict industrial machine failures using sensor data, exploratory data analysis, and advanced classification algorithms.
+## 📑 Table of Contents
 
----
-
-## 📋 Table of Contents
-- [Project Overview](#-project-overview)
+- [About the Project](#-about-the-project)
+- [Project Objectives](#-project-objectives)
+- [Technologies Used](#️-technologies-used)
 - [Project Workflow](#-project-workflow)
-- [Dataset & Features](#-dataset--features)
-- [Exploratory Data Analysis (EDA)](#-exploratory-data-analysis-eda)
-- [Model Training & Evaluation](#-model-training--evaluation)
-- [Results & Feature Importance](#-results--feature-importance)
-- [Installation & Usage](#-installation--usage)
-- [License](#-license)
+- [Model Comparison](#-model-comparison)
+- [Key Learnings](#-key-learnings)
+- [Future Improvements](#-future-improvements)
+- [Author](#-author)
 
----
+## 📌 About the Project
 
-## 🔍 Project Overview
-Predictive maintenance helps industries anticipate equipment failures before they happen, reducing costly downtime and repairs. This project builds a robust predictive model using sensor metrics to classify whether a machine will fail or operate normally.
+This project uses machine learning to predict whether a machine is likely to fail based on its sensor readings, such as temperature, pressure, vibration, and power consumption.
 
----
+I compared four machine learning models to identify which one performs best at predicting machine failures.
 
-## 🛠️ Project Workflow
-The notebook is structured into the following sequential steps[cite: 1, 2]:
-1. **Data Ingestion & Inspection:** Loading the dataset, verifying column names, checking data types, summary statistics, and handling missing values or duplicates[cite: 1].
-2. **Exploratory Data Analysis (EDA):** Analyzing target and feature distributions, running correlation matrices, and comparing sensor averages[cite: 1].
-3. **Data Preprocessing:** Splitting data into train/test sets and applying **SMOTE** (Synthetic Minority Over-sampling Technique) to handle class imbalance[cite: 1, 2].
-4. **Model Training & Comparison:** Training and evaluating multiple classifiers:
-   - Logistic Regression[cite: 2]
-   - Decision Tree[cite: 2]
-   - Random Forest[cite: 2]
-   - Gradient Boosting[cite: 2]
-5. **Evaluation & Deployment:** Selecting the best-performing model, analyzing feature importances, building a custom prediction function, and saving the final model for production use[cite: 2].
+## 🎯 Project Objectives
 
----
+- Understand machine sensor data through visualizations and analysis.
+- Handle imbalanced failure and non-failure records using SMOTE.
+- Train and compare four machine learning models.
+- Identify important factors associated with machine failures.
+- Predict machine failures and save the best-performing model.
 
-## 📊 Visualizations (Results)
-> *Tip: Place your screenshots in an `assets/` folder and link them below like this:*
-> <img width="1182" height="584" alt="image" src="https://github.com/user-attachments/assets/13ba0a55-7f06-4c95-8c50-06933d055486" />
+## 🛠️ Technologies Used
 
+- **Python** — Programming
+- **Pandas & NumPy** — Data analysis
+- **Matplotlib & Seaborn** — Data visualization
+- **Scikit-learn** — Machine learning
+- **Imbalanced-learn** — Handling imbalanced data
+- **Joblib** — Saving the trained model
 
-* **Model Comparison:**
+## 🔍 Project Workflow
+
+1. **Data Loading:** Import libraries and load the dataset.
+2. **Exploratory Data Analysis (EDA):** Examine the data, missing values, duplicates, sensor readings, and relationships between features.
+3. **Data Preparation:** Split the data into training and testing sets and analyze class imbalance using SMOTE.
+4. **Model Training:** Train four machine learning models:
+   - Logistic Regression
+   - Decision Tree
+   - Random Forest
+   - Gradient Boosting
+5. **Model Comparison:** Compare model performance using accuracy, precision, recall, and F1-score.
+6. **Feature Importance:** Identify which sensor readings contribute most to predictions.
+7. **Failure Prediction:** Create a function to predict whether a machine will fail.
+8. **Model Saving:** Save the selected model for future predictions.
+
+## 📊 Model Comparison
+
   ![Model Comparison](assets/model_comparison.png)
 
 
-* **Feature Importance:**
+
+## 📊 Feature Importance
+
   ![Feature Importance](assets/feature_importance.png)
 
-  
+
+
+## 💡 Key Learnings
+
+- Analyzing and visualizing real-world-style sensor data.
+- Training and comparing different machine learning models.
+- Understanding how to evaluate prediction performance.
+- Identifying important factors related to machine failures.
+- Building and saving a reusable prediction model.
+
+## 🚀 Future Improvements
+
+- Improve model performance through parameter tuning.
+- Build an interactive dashboard for machine failure predictions.
+- Explore how the model could support preventive maintenance.
+
+## 👩‍💻 Author
+
+**Aditi Latane**
+
+- GitHub: [AditiLatane](https://github.com/AditiLatane)
+- Portfolio: [Data Analyst Portfolio](https://aditi-latane-data-analyst-portfolio.vercel.app/)
 
 ---
 
-## 🚀 Installation & Usage
-
-### Prerequisites
-Make sure you have Python installed along with the required libraries:
-```bash
-pip install pandas numpy scikit-learn imbalanced-learn matplotlib seaborn joblib
+⭐ If you find this project useful, consider giving the repository a star!
